@@ -1,13 +1,13 @@
 def online():
     import urllib.request
-    if (urllib.request.urlopen("https://raw.githubusercontent.com/explo-1why/PyBrowser/refs/heads/main/online.txt").read().decode())=="ping successful":
+    if (urllib.request.urlopen("https://raw.githubusercontent.com/explo-1why/PyBrowser/refs/heads/main/online.txt").read().decode().strip())=="ping":
         return True
     else:
         return False
 if not online():
     print("You are currently not online.")
     import time
-    time.sleep(5)
+    time.sleep(1)
     print("Terminating Script")
     import sys
     sys.exit(1)
