@@ -3,7 +3,7 @@ import time
 time.sleep(1)
 inputtest=input("Input")
 time.sleep(1)
-intinputtest=int(input("IntInput Test"))
+intinputtest=int(input("IntInput"))
 time.sleep(1)
 print(inputtest)
 time.sleep(1)
