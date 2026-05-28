@@ -30,5 +30,6 @@ while True:
     elif option.lower()==("run"):
         try:
             exec(fetch(url))
-        except:
+        except Exception as error:
             print("That file isn't a Python file or it has an error.")
+            print("Error Code: ",error)
